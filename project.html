@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bruno Book Library</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-900 text-white">
+
+<!-- NAVBAR -->
+<nav class="flex justify-between items-center px-12 py-6 bg-gradient-to-r from-indigo-600 to-purple-700 shadow-lg">
+  <h1 class="text-2xl font-bold text-white">Bruno Library</h1>
+  <ul class="flex space-x-8">
+    <li><a href="#home" class="hover:text-yellow-300 font-semibold">Hoyga</a></li>
+    <li><a href="#borrow" class="hover:text-yellow-300 font-semibold">Amaah</a></li>
+  </ul>
+</nav>
+
+<!-- HOME SECTION -->
+<section id="home" 
+  class="h-screen grid grid-cols-2 items-center px-12 bg-gradient-to-r from-slate-900 to-indigo-900">
+
+  <!-- TEXT -->
+  <div>
+    <p class="text-yellow-300 font-bold mb-3 uppercase tracking-widest">Ku soo dhawoow</p>
+    <h1 class="text-5xl font-extrabold mb-6 leading-tight">
+      Bruno  <span class="text-indigo-400"> Book</span> Library
+    </h1>
+    <p class="text-gray-300 mb-8 max-w-lg">
+      Halkan waxaad ka amaahan kartaa buugaag tayo sare leh, aqoon iyo horumar kuu horseedaya.
+    </p>
+
+    <a href="#borrow"
+      class="inline-block bg-yellow-400 text-black px-8 py-3 rounded-full font-bold hover:bg-yellow-300 transition">
+      Amaah Hadda
+    </a>
+  </div>
+
+  <!-- IMAGE -->
+  <div class="flex justify-center">
+    <img src="df.jpg" alt="Library Image"
+      class="w-full h-[75vh] object-cover rounded-2xl shadow-2xl border-4 border-indigo-500">
+  </div>
+
+</section>
+
+<!-- BORROW SECTION -->
+<section id="borrow" class="px-12 py-20 bg-slate-800 text-center">
+  <h2 class="text-4xl font-bold mb-10 text-yellow-400">Amaah Buug</h2>
+
+  <div class="flex flex-col items-center space-y-5 max-w-md mx-auto bg-slate-900 p-8 rounded-2xl shadow-2xl">
+    
+    <input id="name" type="text" placeholder="Magacaaga"
+      class="w-full p-3 rounded bg-slate-700 text-white focus:outline-none focus:ring-2 focus:ring-yellow-400">
+
+    <select id="book" 
+      class="w-full p-3 rounded bg-slate-700 text-white cursor-pointer focus:outline-none focus:ring-2 focus:ring-yellow-400">
+      <option value="">Dooro Buug</option>
+      <option value="english">English Book</option>
+      <option value="math">Math Book</option>
+      <option value="science">Science Book</option>
+    </select>
+
+    <input id="days" type="number" placeholder="Maalmaha Amaahda"
+      class="w-full p-3 rounded bg-slate-700 text-white focus:outline-none focus:ring-2 focus:ring-yellow-400">
+
+    <button id="borrowBtn"
+      class="w-full bg-yellow-400 text-black px-6 py-3 rounded-full font-bold hover:bg-yellow-300 transition">
+      Amaah Buug
+    </button>
+
+    <p id="result" class="text-green-400 font-bold mt-4"></p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="text-center py-6 bg-gradient-to-r from-indigo-700 to-purple-700">
+  <p class="font-semibold">© 2022R Bruno Book Library | All Rights Reserved</p>
+</footer>
+
+<script src="prject.js"></script>
+</body>
+</html>
